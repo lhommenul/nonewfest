@@ -8,15 +8,17 @@ import Billetterie from "../images/billetterie.png";
 ---
 
 <Layout title="NO NEW FEST">
-	<section class="px-20" >
-		<div class="flex flex-col gap-5 mt-10 justify-center items-center" >
-			<a href="/le-bateau-ivre">
+	<section class="flex flex-col px-20 gap-10 md:gap-20" >
+		<div class="flex flex-row flex-wrap gap-5 mt-10 lg:gap-20 justify-center" >
+			<a href="/le-bateau-ivre" class="max-w-96" >
 				<Image src={DuringFest} alt="During Fest" />
 			</a>
-			<Image src={BeforeFest} alt="Before Fest" />
+			<a href="" class="max-w-96" >
+				<Image src={BeforeFest} alt="Before Fest" />
+			</a>
 		</div>
-		<a href="">
-			<Image src={Billetterie} alt="Billetterie" class="my-10 mx-auto" />
+		<a href="" class="mx-auto" >
+			<Image src={Billetterie} alt="Billetterie" class="" />
 		</a>
 	</section>
 </Layout>
