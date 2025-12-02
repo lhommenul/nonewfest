@@ -2,22 +2,58 @@
 import Layout from "../layouts/index.astro";
 
 import { Image } from "astro:assets";
-import BeforeFest from "../images/fests/before.jpg";
-import DuringFest from "../images/fests/fest.jpg";
-import Billetterie from "../images/billetterie.png";
+import Jeudi19 from "../images/jeudi-19.png";
+
+// BAND FUTUROSCOPE
+import Futuroscope from "../images/bands/futuroscope/band.png";
+import FuturoscopeTitle from "../images/bands/futuroscope/title.png";
+
+// BAND PAPIER TIGRE
+import PapierTigre from "../images/bands/papier-tigre/band.png";
+import PapierTigreTitle from "../images/bands/papier-tigre/title.png";
+
+// BAND 178
+import SeventeenEight from "../images/bands/178/band.png";
+import SeventeenEightTitle from "../images/bands/178/title.png";
+
+// BAND DWYNE
+import Dwyer from "../images/bands/dwyne/band.png";
+import DwyerTitle from "../images/bands/dwyne/title.png";
 ---
 
 <Layout title="NO NEW FEST - Le Bateau Ivre">
-	<section class="px-20" >	
-		LE BATEAU
-		<div class="flex flex-row flex-wrap gap-5 mt-10" >
-			<a href="/le-bateau-ivre" class="max-w-1xl">
-				<Image src={DuringFest} alt="During Fest" />
-			</a>
-			<Image src={BeforeFest} alt="Before Fest" />
+	<section class="px-20 flex flex-col" >	
+		<h2 class="mx-auto" >
+			<Image src={Jeudi19} alt="Jeudi 19" />
+		</h2>
+
+		<div>
+			<Image src={Futuroscope} alt="Futuroscope" />
+			<Image src={FuturoscopeTitle} alt="Futuroscope" />
 		</div>
-		<a href="">
-			<Image src={Billetterie} alt="Billetterie" class="my-10 mx-auto" />
-		</a>
+
+		<div>
+			<Image src={PapierTigre} alt="Papier Tigre" />
+			<Image src={PapierTigreTitle} alt="Papier Tigre" />
+		</div>
+
+		<div>
+			<Image src={SeventeenEight} alt="SeventeenEight" />
+			<Image src={SeventeenEightTitle} alt="SeventeenEight" />
+		</div>
+
+		<div>
+			<Image src={Dwyer} alt="Dwyne" />
+			<Image src={DwyerTitle} alt="Dwyne Title" />
+		</div>
+
+	</section>
+
+	<section>
+		
+	</section>
+
+	<section>
+		
 	</section>
 </Layout>
