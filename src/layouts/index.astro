@@ -3,6 +3,12 @@ import "../styles/global.css";
 
 const { title } = Astro.props;
 
+const year = new Date().getFullYear();
+const month = new Date().getMonth();
+const day = new Date().getDate();
+
+const eventDate = new Date(2026, 1, 1);
+const daysUntilEvent = Math.ceil((eventDate.getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24));
 ---
 
 <html lang="fr">
@@ -14,13 +20,15 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-        <header class="flex justify-between items-center px-6 py-5">
-            <h1 class="text-base font-bold font-maven">
-                NO<span class="sr-only"> </span>NEW<span class="sr-only"> </span>FEST
+        <header class="flex justify-between items-center px-6 py-5 container mx-auto">
+            <h1 class="text-base font-bold font-maven flex flex-col leading-[0.7]">
+                <span>NO</span>
+                <span>NEW</span>
+                <span>FEST</span>
             </h1>
-            <span class="font-maven font-bold" >J - ???</span>
+            <span class="font-maven font-bold" >J - {daysUntilEvent}</span>
         </header>
-		<main>
+		<main class="container mx-auto" >
 			<slot />
 		</main>
         <slot name="footer" />
