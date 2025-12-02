@@ -3,38 +3,83 @@ import Layout from "../layouts/index.astro";
 
 import { Image } from "astro:assets";
 import Jeudi19 from "../images/jeudi-19.png";
-
-// BAND FUTUROSCOPE
-import Futuroscope from "../images/bands/futuroscope/band.png";
-import FuturoscopeTitle from "../images/bands/futuroscope/title.png";
-
-// BAND PAPIER TIGRE
-import PapierTigre from "../images/bands/papier-tigre/band.png";
-import PapierTigreTitle from "../images/bands/papier-tigre/title.png";
+import Vendredi from "../images/vendredi.png";
+import Samedi from "../images/samedi.png";
 
 // BAND 178
 import SeventeenEight from "../images/bands/178/band.png";
 import SeventeenEightTitle from "../images/bands/178/title.png";
 
 // BAND DWYNE
-import Dwyer from "../images/bands/dwyne/band.png";
-import DwyerTitle from "../images/bands/dwyne/title.png";
-
-// BAND GEYSIR
-import Geysir from "../images/bands/geysir/band.png";
-import GeysirTitle from "../images/bands/geysir/title.png";
-
-// BAND katya
-import Katya from "../images/bands/katya-shirshkova/band.png";
-import KatyaTitle from "../images/bands/katya-shirshkova/title.png";
+import Dwyne from "../images/bands/dwyne/band.png";
+import DwyneTitle from "../images/bands/dwyne/title.png";
 
 // BAND FOUDRE
 import Foudre from "../images/bands/foudre/band.png";
 import FoudreTitle from "../images/bands/foudre/title.png";
 
-// BAND  this-guns-for-hire
+// BAND FUTUROSCOPE
+import Futuroscope from "../images/bands/futuroscope/band.png";
+import FuturoscopeTitle from "../images/bands/futuroscope/title.png";
+
+// BAND GEYSIR
+import Geysir from "../images/bands/geysir/band.png";
+import GeysirTitle from "../images/bands/geysir/title.png";
+
+// BAND KATYA SHIRSHKOVA
+import Katya from "../images/bands/katya-shirshkova/band.png";
+import KatyaTitle from "../images/bands/katya-shirshkova/title.png";
+
+// BAND LAETITA SHERIFF THOMAS POLI
+import LaetitaSheriff from "../images/bands/laetita-sheriff-thomas-poli/band.png";
+import LaetitaSheriffTitle from "../images/bands/laetita-sheriff-thomas-poli/title.png";
+
+// BAND MOTO RAIDE
+import MotoRaide from "../images/bands/moto-raide/band.png";
+import MotoRaideTitle from "../images/bands/moto-raide/title.png";
+
+// BAND NUEIT
+import Nueit from "../images/bands/nueit/band.png";
+import NueitTitle from "../images/bands/nueit/title.png";
+
+// BAND OD BONGO
+import OdBongo from "../images/bands/od-bongo/band.png";
+import OdBongoTitle from "../images/bands/od-bongo/title.png";
+
+// BAND PAPIER TIGRE
+import PapierTigre from "../images/bands/papier-tigre/band.png";
+import PapierTigreTitle from "../images/bands/papier-tigre/title.png";
+
+// BAND TACHYCARDIE
+import Tachycardie from "../images/bands/tachycardie/band.png";
+import TachycardieTitle from "../images/bands/tachycardie/title.png";
+
+// BAND THIS GUNS FOR HIRE
 import ThisGunsForHire from "../images/bands/this-guns-for-hire/band.png";
 import ThisGunsForHireTitle from "../images/bands/this-guns-for-hire/title.png";
+
+// BAND TVAM
+import Tvam from "../images/bands/tvam/band.png";
+import TvamTitle from "../images/bands/tvam/title.png";
+
+// BAND WHAT ARE PEOPLE FOR
+import WhatArePeopleFor from "../images/bands/what-are-people-fpr/band.png";
+import WhatArePeopleForTitle from "../images/bands/what-are-people-fpr/title.png";
+
+// TEXT JEUDI
+import TextJeudi from "../images/text-jeudi.png";
+
+// TEXT VENDREDI
+import TextVendredi from "../images/text-vendredi.png";
+
+// TEXT SAMEDI
+import TextSamedi from "../images/text-samedi.png";
+
+// BILLETTERIE
+import Billetterie from "../images/billetterie.png";
+
+// ARROW
+import Arrow from "../images/arrow.png";
 ---
 
 <Layout title="NO NEW FEST - Le Bateau Ivre">
@@ -44,9 +89,23 @@ import ThisGunsForHireTitle from "../images/bands/this-guns-for-hire/title.png";
 		</h2>
 
 		<div>
+			<Image src={SeventeenEight} alt="178" />
+			<Image src={SeventeenEightTitle} alt="178" />
+		</div>
+
+		<div>
+			<Image src={Dwyne} alt="Dwyne" />
+			<Image src={DwyneTitle} alt="Dwyne" />
+		</div>
+
+
+
+		<div>
 			<Image src={Futuroscope} alt="Futuroscope" />
 			<Image src={FuturoscopeTitle} alt="Futuroscope" />
 		</div>
+
+
 
 		<div>
 			<Image src={PapierTigre} alt="Papier Tigre" />
@@ -54,22 +113,80 @@ import ThisGunsForHireTitle from "../images/bands/this-guns-for-hire/title.png";
 		</div>
 
 		<div>
-			<Image src={SeventeenEight} alt="SeventeenEight" />
-			<Image src={SeventeenEightTitle} alt="SeventeenEight" />
+			<Image src={ThisGunsForHire} alt="This Guns For Hire" />
+			<Image src={ThisGunsForHireTitle} alt="This Guns For Hire" />
+		</div>
+
+		<Image src={TextJeudi} alt="Text Jeudi" />
+
+
+
+	</section>
+
+	<section class="px-20 flex flex-col" >
+		<header>
+			<Image src={Vendredi} alt="Vendredi" />
+		</header>
+		<div>
+			<Image src={WhatArePeopleFor} alt="What Are People For" />
+			<Image src={WhatArePeopleForTitle} alt="What Are People For" />
+		</div>
+		<div>
+			<Image src={MotoRaide} alt="Moto Raide" />
+			<Image src={MotoRaideTitle} alt="Moto Raide" />
+		</div>
+		<div>
+			<Image src={Geysir} alt="Geysir" />
+			<Image src={GeysirTitle} alt="Geysir" />
 		</div>
 
 		<div>
-			<Image src={Dwyer} alt="Dwyne" />
-			<Image src={DwyerTitle} alt="Dwyne Title" />
+			<Image src={Nueit} alt="Nueit" />
+			<Image src={NueitTitle} alt="Nueit" />
 		</div>
 
+		<div>
+			<Image src={Tachycardie} alt="Tachycardie" />
+			<Image src={TachycardieTitle} alt="Tachycardie" />
+		</div>
+
+		<Image src={TextVendredi} alt="Text Vendredi" class="mx-auto" />
+
 	</section>
 
-	<section>
-		
+	<section class="px-20 flex flex-col" >
+		<header>
+			<Image src={Samedi} alt="Samedi" />
+		</header>
+		<div>
+			<Image src={Tvam} alt="TVAM" />
+			<Image src={TvamTitle} alt="TVAM" />
+		</div>
+		<div>
+			<Image src={Katya} alt="Katya Shirshkova" />
+			<Image src={KatyaTitle} alt="Katya Shirshkova" />
+		</div>
+
+		<div>
+			<Image src={Foudre} alt="Foudre" />
+			<Image src={FoudreTitle} alt="Foudre" />
+		</div>
+
+		<div>
+			<Image src={LaetitaSheriff} alt="Laetita Sheriff Thomas Poli" />
+			<Image src={LaetitaSheriffTitle} alt="Laetita Sheriff Thomas Poli" />
+		</div>
+
+		<div>
+			<Image src={OdBongo} alt="Od Bongo" />
+			<Image src={OdBongoTitle} alt="Od Bongo" />
+		</div>
+
+		<Image src={TextSamedi} alt="Text Samedi" />
 	</section>
 
-	<section>
-		
-	</section>
+	<footer slot="footer" class="px-20 flex flex-row items-center justify-center gap-10" > 
+		<Image src={Arrow} alt="Arrow" />
+		<Image src={Billetterie} alt="Billetterie" />
+	</footer>
 </Layout>
