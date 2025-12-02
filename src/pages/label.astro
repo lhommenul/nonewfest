@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/index.astro";
+
+import { Image } from "astro:assets";
+import banner from "../images/banner.jpg";
+import playlist from "../images/playlist.png"
+import playlistText from "../images/playlist_text.png"
+import email from "../images/email.jpg"
+import instagram from "../images/instagram.jpg"
+---
+
+<Layout title="NO NEW FEST">
+	<Image src={banner} alt="Banner" class="mx-auto lg:max-w-5xl" />
+
+	<article class="px-10 py-10 flex flex-col items-center justify-center gap-10" >
+		<h2 class="grid grid-cols-1 row-cols-1 justify-items-center items-center w-38 lg:w-60" >
+			<Image src={playlist} alt="Playlist" class="w-full lg:w-90" />
+		</h2>
+		<Image src={playlistText} alt="" class="w-full lg:px-14 lg:max-w-5xl" />
+	</article>
+
+	<footer slot="footer" class="flex flex-row justify-between items-center px-10 py-10 w-full mx-auto container" >
+		<a href="mailto:reversetapes@gmail.com" target="_blank" class="w-40" >
+			<Image src={email} alt="Email" />
+		</a>
+		<a href="https://www.instagram.com/reversetapes/" target="_blank" >
+			<Image src={instagram} alt="Instagram" />
+		</a>
+	</footer>
+</Layout>
