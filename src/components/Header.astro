@@ -1,0 +1,19 @@
+---
+const year = new Date().getFullYear();
+const month = new Date().getMonth();
+const day = new Date().getDate();
+
+const eventDate = new Date(2026, 2, 19);
+const daysUntilEvent = Math.ceil((eventDate.getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24));
+
+---
+
+
+<header class="flex justify-between items-center px-6 py-5 container mx-auto h-fit">
+    <h1 class="font-bold font-maven flex flex-col leading-[0.7] lg:flex-row lg:text-4xl lg:gap-2 text-xl">
+        <span>NO</span>
+        <span>NEW</span>
+        <span>FEST</span>
+    </h1>
+    <span class="font-maven font-bold text-xl lg:text-4xl" >J - {daysUntilEvent}</span>
+</header>

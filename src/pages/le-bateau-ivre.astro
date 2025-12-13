@@ -80,113 +80,112 @@ import Billetterie from "../images/billetterie.png";
 
 // ARROW
 import Arrow from "../images/arrow.png";
+
+import Header from "../components/Header.astro"
 ---
 
 <Layout title="NO NEW FEST - Le Bateau Ivre">
-	<section class="px-20 flex flex-col" >	
-		<h2 class="mx-auto" >
+	<Header />
+	<section class="px-5 flex flex-col" >	
+		<h2 class="mx-auto mt-7 mb-9" >
 			<Image src={Jeudi19} alt="Jeudi 19" />
 		</h2>
 
-		<div>
-			<Image src={SeventeenEight} alt="178" />
-			<Image src={SeventeenEightTitle} alt="178" />
+		<div class="ml-2">
+			<Image src={Futuroscope} alt="Futuroscope" class="h-40 w-auto" />
+			<Image src={FuturoscopeTitle} alt="Futuroscope" class="relative right-4" />
 		</div>
 
-		<div>
-			<Image src={Dwyne} alt="Dwyne" />
-			<Image src={DwyneTitle} alt="Dwyne" />
+		<div class="ml-auto grid grid-cols-1 grid-rows-1 mr-6" >
+			<Image src={PapierTigreTitle} alt="Papier Tigre" class="relative col-start-1 row-start-1 left-28 -top-5" />
+			<Image src={PapierTigre} alt="Papier Tigre" class="col-start-1 row-start-1" />
 		</div>
 
-
-
-		<div>
-			<Image src={Futuroscope} alt="Futuroscope" />
-			<Image src={FuturoscopeTitle} alt="Futuroscope" />
+		<div class="flex flex-col ml-auto mt-6">
+			<Image src={SeventeenEightTitle} alt="178" class="relative right-2 col-start-1 row-start-1" />
+			<Image src={SeventeenEight} alt="178" class="col-start-1 row-start-1" />
 		</div>
 
-
-
-		<div>
-			<Image src={PapierTigre} alt="Papier Tigre" />
-			<Image src={PapierTigreTitle} alt="Papier Tigre" />
+		<div class=" grid grid-cols-1 grid-rows-1 mt-16">
+			<Image src={DwyneTitle} alt="Dwyne" class="relative left-34 bottom-2 col-start-1 row-start-1" />
+			<Image src={Dwyne} alt="Dwyne" class="col-start-1 row-start-1 h-46 w-auto" />
 		</div>
 
-		<div>
+		<div class="flex flex-col ml-auto mt-10 mr-3" >
+			<Image src={ThisGunsForHireTitle} alt="This Guns For Hire" class="relative top-2 right-8" />
 			<Image src={ThisGunsForHire} alt="This Guns For Hire" />
-			<Image src={ThisGunsForHireTitle} alt="This Guns For Hire" />
 		</div>
 
-		<Image src={TextJeudi} alt="Text Jeudi" />
+		<Image src={TextJeudi} alt="Text Jeudi" class="w-full mt-8" />
 
 
 
 	</section>
 
-	<section class="px-20 flex flex-col" >
-		<header>
+	<section class="flex flex-col mt-20" >
+		<header class="mb-16 mx-auto">
 			<Image src={Vendredi} alt="Vendredi" />
 		</header>
-		<div>
-			<Image src={WhatArePeopleFor} alt="What Are People For" />
+		<div class="ml-3">
 			<Image src={WhatArePeopleForTitle} alt="What Are People For" />
+			<Image src={WhatArePeopleFor} alt="What Are People For" />
 		</div>
-		<div>
-			<Image src={MotoRaide} alt="Moto Raide" />
-			<Image src={MotoRaideTitle} alt="Moto Raide" />
+		<div class="mt-14 mx-auto">
+			<Image src={MotoRaide} alt="Moto Raide" class="relative left-4" />
+			<Image src={MotoRaideTitle} alt="Moto Raide" class="relative right-4" />
 		</div>
-		<div>
+		<div class="mt-18 ml-auto mr-3">
+			<Image src={GeysirTitle} alt="Geysir" class="relative right-10 top-3" />
 			<Image src={Geysir} alt="Geysir" />
-			<Image src={GeysirTitle} alt="Geysir" />
 		</div>
 
-		<div>
+		<div class="mt-19" >
 			<Image src={Nueit} alt="Nueit" />
-			<Image src={NueitTitle} alt="Nueit" />
+			<Image src={NueitTitle} alt="Nueit" class="relative left-45 bottom-4" />
 		</div>
 
-		<div>
-			<Image src={Tachycardie} alt="Tachycardie" />
+		<div class="mt-16 flex flex-row items-center ml-auto">
 			<Image src={TachycardieTitle} alt="Tachycardie" />
+			<Image src={Tachycardie} alt="Tachycardie" />
 		</div>
 
-		<Image src={TextVendredi} alt="Text Vendredi" class="mx-auto" />
+		<Image src={TextVendredi} alt="Text Vendredi" class="mx-auto mt-8" />
 
 	</section>
 
-	<section class="px-20 flex flex-col" >
-		<header>
+	<section class="flex flex-col" >
+		<header class="mt-8 mx-auto mb-5" >
 			<Image src={Samedi} alt="Samedi" />
 		</header>
-		<div>
+		<div class="ml-13" >
 			<Image src={Tvam} alt="TVAM" />
-			<Image src={TvamTitle} alt="TVAM" />
+			<Image src={TvamTitle} alt="TVAM" class="relative bottom-5 right-2" />
 		</div>
-		<div>
+		<div class="mt-18 ml-auto">
+			<Image src={KatyaTitle} alt="Katya Shirshkova" class="relative right-20 top-4" />
 			<Image src={Katya} alt="Katya Shirshkova" />
-			<Image src={KatyaTitle} alt="Katya Shirshkova" />
 		</div>
 
-		<div>
-			<Image src={Foudre} alt="Foudre" />
+		<div class="mt-12 flex flex-row items-center ml-14">
 			<Image src={FoudreTitle} alt="Foudre" />
+			<Image src={Foudre} alt="Foudre" />
 		</div>
 
-		<div>
+		<div class="mt-24 ml-2">
+			<Image src={LaetitaSheriffTitle} alt="Laetita Sheriff Thomas Poli" class="relative left-20"/>
 			<Image src={LaetitaSheriff} alt="Laetita Sheriff Thomas Poli" />
-			<Image src={LaetitaSheriffTitle} alt="Laetita Sheriff Thomas Poli" />
 		</div>
 
-		<div>
+		<div class="mt-18 ml-11">
 			<Image src={OdBongo} alt="Od Bongo" />
-			<Image src={OdBongoTitle} alt="Od Bongo" />
+			<Image src={OdBongoTitle} alt="Od Bongo" class="relative left-42" />
 		</div>
 
-		<Image src={TextSamedi} alt="Text Samedi" />
+		<Image src={TextSamedi} alt="Text Samedi" class="mx-auto"/>
 	</section>
 
-	<footer slot="footer" class="px-20 flex flex-row items-center justify-center gap-10" > 
-		<Image src={Arrow} alt="Arrow" />
-		<Image src={Billetterie} alt="Billetterie" />
+	<footer class="px-20 grid grid-cols-1 grid-rows-1 mt-22" > 
+		<Image src={Arrow} alt="Arrow" class="col-start-1 row-start-1 relative rotate-180 right-34 bottom-18" />
+		<Image src={Billetterie} alt="Billetterie" class="col-start-1 row-start-1" />
 	</footer>
 </Layout>

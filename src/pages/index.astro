@@ -1,24 +1,30 @@
 ---
 import Layout from "../layouts/index.astro";
+import Header from "../components/Header.astro";
 
 import { Image } from "astro:assets";
 import BeforeFest from "../images/fests/before.jpg";
 import DuringFest from "../images/fests/fest.jpg";
 import Billetterie from "../images/billetterie.png";
+import Arrow from "../images/arrow.png";
 ---
 
-<Layout title="NO NEW FEST">
-	<section class="flex flex-col px-20 gap-10 md:gap-20" >
-		<div class="flex flex-row flex-wrap gap-5 mt-10 lg:gap-20 justify-center" >
-			<a href="/le-bateau-ivre" class="max-w-96" >
-				<Image src={DuringFest} alt="During Fest" />
+<Layout title="NO NEW FEST" className="h-screen overflow-hidden flex flex-col" >
+	<Header />
+	<section class="mx-auto h-auto justify-center flex" >
+		<div class="grid grid-cols-1 grid-rows-2 gap-10 lg:grid-cols-2 lg:grid-rows-[100%] h-full justify-center lg:gap-24" >
+			<a href="/le-bateau-ivre" class="max-w-[522px] flex w-full h-full" >
+				<Image src={DuringFest} alt="During Fest" class="h-auto w-auto"/>
 			</a>
-			<a href="" class="max-w-96" >
-				<Image src={BeforeFest} alt="Before Fest" />
+			<a href="/before" class="max-w-[522px] flex w-full h-full" >
+				<Image src={BeforeFest} alt="Before Fest" class="h-auto w-auto"/>
 			</a>
 		</div>
-		<a href="" class="mx-auto" >
-			<Image src={Billetterie} alt="Billetterie" class="" />
-		</a>
 	</section>
+	<footer class="mx-auto container mb-18 mt-14">
+		<a  href="" class="mx-auto grid grid-cols-1 grid-rows-1 h-6 lg:h-12 w-fit" >
+			<Image src={Billetterie} alt="Billetterie" class="h-full w-auto col-start-1 row-start-1" />
+			<Image src={Arrow} alt="Arrow" class="invisible lg:visible relative top-7 -right-48 w-auto col-start-1 row-start-1" />
+		</a>
+	</footer>
 </Layout>

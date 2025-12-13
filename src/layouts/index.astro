@@ -1,14 +1,7 @@
 ---
 import "../styles/global.css";
 
-const { title } = Astro.props;
-
-const year = new Date().getFullYear();
-const month = new Date().getMonth();
-const day = new Date().getDate();
-
-const eventDate = new Date(2026, 2, 19);
-const daysUntilEvent = Math.ceil((eventDate.getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24));
+const { title, className } = Astro.props;
 ---
 
 <html lang="fr">
@@ -19,18 +12,7 @@ const daysUntilEvent = Math.ceil((eventDate.getTime() - new Date().getTime()) / 
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-        <header class="flex justify-between items-center px-6 py-5 container mx-auto">
-            <h1 class="text-base font-bold font-maven flex flex-col leading-[0.7]">
-                <span>NO</span>
-                <span>NEW</span>
-                <span>FEST</span>
-            </h1>
-            <span class="font-maven font-bold" >J - {daysUntilEvent}</span>
-        </header>
-		<main class="container mx-auto" >
-			<slot />
-		</main>
-        <slot name="footer" />
+	<body class={className} >
+		<slot />
 	</body>
 </html>
