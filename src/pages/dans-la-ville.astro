@@ -1,0 +1,243 @@
+---
+import Layout from "../layouts/index.astro";
+
+import { Image } from "astro:assets";
+import BeforeHeadTitleDesktop from "../images/la-ville/header/title.png";
+import BeforeHeadTitle from "../images/la-ville/header/title_mobile.png";
+import BeforeHeadCondition from "../images/la-ville/header/subtitle.png";
+import Vendredi from "../images/vendredi.png";
+import Samedi from "../images/samedi.png";
+
+
+// ===== SAMEDI 07
+import TextSamedi7 from "../images/la-ville/samedi-07/title.png";
+import TextSamedi7Subtitle from "../images/la-ville/samedi-07/subtitle.png";
+
+// BAND ATM SNIPER VICTIM
+import AtmSniperVictim from "../images/la-ville/samedi-07/atm-image.png";
+import AtmSniperVictimTitle from "../images/la-ville/samedi-07/atm-title.png";
+
+// BAND PRAIRIE SHOOTING
+import PrairieShooting from "../images/bands/before/prairie_shooting/image.png";
+import PrairieShootingTitle from "../images/bands/before/prairie_shooting/title.png";
+
+
+// ===== SAMEDI 14
+import TextSamedi14 from "../images/la-ville/samedi-14/title.png";
+import TextSamedi14Subtitle from "../images/la-ville/samedi-14/subtitle.png";
+
+
+// BAND PRIX LIBRE
+import PrixLibre from "../images/la-ville/samedi-14/prix-image.png";
+import PrixLibreTitle from "../images/la-ville/samedi-14/prix-title.png";
+
+// BAND AESTHESIS
+import Aesthesis from "../images/la-ville/samedi-14/aest-image.png";
+import AesthesisTitle from "../images/la-ville/samedi-14/aest-title.png";
+
+// ===== MERCREDI 18
+import TextMercredi18 from "../images/la-ville/mercredi-18/title.png";
+import TextMercredi18Subtitle from "../images/la-ville/mercredi-18/subtitle.png";
+
+// BAND ARSEN DOLINE
+import ArsenDoline from "../images/la-ville/mercredi-18/arsen-image.png";
+import ArsenDolineTitle from "../images/la-ville/mercredi-18/arsen-title.png";
+
+// ===== SAMEDI 21
+import TextSamedi21 from "../images/la-ville/samedi-21/title.png";
+import TextSamedi21Subtitle from "../images/la-ville/samedi-21/subtitle.png";
+
+// BAND BORGEFUL
+import Borgeful from "../images/la-ville/samedi-21/borgue-image.png";
+import BorgefulTitle from "../images/la-ville/samedi-21/borgue-title.png";
+
+// BAND BORGEFUL
+import Doctrove from "../images/la-ville/samedi-21/doctrove-image.png";
+import DoctroveTitle from "../images/la-ville/samedi-21/doctrove-title.png";
+
+// BAND CARNAGE PIKNIK
+import CarnagePiknik from "../images/bands/before/carnage_piknik/image.png";
+import CarnagePiknikTitle from "../images/bands/before/carnage_piknik/title.png";
+
+// BAND LEO HOWARD
+import LeoHoward from "../images/bands/before/leo_howard/image.png";
+import LeoHowardTitle from "../images/bands/before/leo_howard/title.png";
+
+
+// BAND SODOM ET SAGESSE
+import SodomEtSagesse from "../images/bands/before/sodom_et_sagesse/image.png";
+import SodomEtSagesseTitle from "../images/bands/before/sodom_et_sagesse/title.png";
+
+// BAND THIBAULT FLORENT
+import ThibaultFlorent from "../images/bands/before/thibault_florent/image.png";
+import ThibaultFlorentTitle from "../images/bands/before/thibault_florent/title.png";
+
+// BAND TORI
+import Tori from "../images/bands/before/tori/image.png";
+import ToriTitle from "../images/bands/before/tori/title.png";
+
+// BAND VETUSTE
+import Vetuste from "../images/bands/before/vetuste/image.png";
+import VetusteTitle from "../images/bands/before/vetuste/title.png";
+
+// import TextSamediUnder7 from "../images/before-text-samedi-under.png";
+
+// import TextSamediUnder21 from "../images/before-text-samedi-21-under.png";
+
+// BILLETTERIE
+import Billetterie from "../images/billetterie.png";
+
+// ARROW
+import Arrow from "../images/arrow.png";
+
+import Header from "../components/Header.astro"
+---
+
+<Layout title="NO NEW FEST - Before">
+	<Header />
+	<section class=" flex flex-col" >
+		<h2 class="mx-auto px-7" >
+			<Image src={BeforeHeadTitle} alt="description de l'event" class="visible md:hidden w-full" />
+			<Image src={BeforeHeadTitleDesktop} alt="description de l'event" class="hidden md:block" />
+			<Image src={BeforeHeadCondition} alt="event condition" />
+		</h2>
+
+		<!-- SAMEDI 07 -->
+
+		<div class="flex justify-center items-center flex-col h-fit px-7" >
+
+			<Image src={TextSamedi7} alt="Text Samedi 07" class="mr-auto" />
+			<Image src={TextSamedi7Subtitle} alt="Text Samedi 07" class="h-18 w-fit ml-auto relative bottom-12" />
+
+		</div>
+
+		<div class="mx-auto flex flex-col justify-center items-center px-7" >
+			<div class="flex flex-col justify-center items-center mx-8 z-20" >
+				<Image src={AtmSniperVictimTitle} alt="ATM Sniper Victim" class="relative left-16 top-4 h-6 w-auto" />
+				<Image src={AtmSniperVictim} alt="ATM Sniper Victim" />
+			</div>
+			<div class="flex flex-col justify-center items-center mx-8 relative bottom-4" >
+				<Image src={PrairieShooting} alt="Prairie Shooting" class="w-full" />
+				<Image src={PrairieShootingTitle} alt="Prairie Shooting" class="relative right-6 bottom-2 h-6" />
+			</div>
+		</div>
+
+		<!-- SAMEDI 14 -->
+
+		<div class="mx-auto px-7" >
+			<Image src={TextSamedi14} alt="Text Samedi 14" class="mx-auto" />
+			<Image src={TextSamedi14Subtitle} alt="Text Samedi 14" class="mx-auto h-26 ml-auto w-fit relative left-14 bottom-4" />
+		</div>
+
+		<div class="mx-auto flex flex-col mt-6 justify-center items-center px-7" >
+
+			<div class="flex flex-col-reverse justify-center items-center mb-auto z-20"  >
+				<Image src={PrixLibre} alt="Prix Libre" />
+				<Image src={PrixLibreTitle} alt="Prix Libre" class="w-auto mr-auto relative left-4 top-8 h-12" />
+			</div>
+
+			<div class="flex flex-col justify-center items-center mr-auto relative bottom-8"  >
+				<Image src={Aesthesis} alt="Aesthesis" />
+				<Image src={AesthesisTitle} alt="Aesthesis" class="mr-auto relative bottom-5 left-4 h-7 w-auto" />
+			</div>
+
+		</div>
+
+		<!-- MERCREDI 18 -->
+
+		<div class="flex flex-col justify-center items-center px-7" >
+			<Image src={TextMercredi18} alt="" />
+			<Image src={TextMercredi18Subtitle} alt="" class="ml-auto h-24 w-auto relative bottom-14 left-14" />
+		</div>
+
+		<div class="flex flex-col justify-center items-center" >
+
+			<div class="flex justify-center items-center flex-col-reverse" >
+				<Image src={ArsenDoline} alt="Arsen Doline" class="w-2/3 ml-auto" />
+				<Image src={ArsenDolineTitle} alt="Arsen Doline" class=" relative top-4 right-14 -rotate-6 h-10 w-auto" />
+			</div>
+
+			<div class="flex justify-center items-center flex-col w-full relative bottom-2" >
+				<Image src={ThibaultFlorent} alt="Thibault Florent" class="w-full" />
+				<Image src={ThibaultFlorentTitle} alt="Thibault Florent" class="mr-auto relative bottom-2" />
+			</div>
+
+		</div>
+
+		<!-- SAMEDI 21 -->
+
+		<div class="flex flex-col justify-center items-center px-7" >
+			<Image src={TextSamedi21} alt="" class="-rotate-4" />
+			<Image src={TextSamedi21Subtitle} alt="" class="ml-auto h-28 w-auto relative bottom-18 left-4 -rotate-2" />
+		</div>
+
+		<div class="flex flex-col justify-center items-center" >
+			<div class="flex flex-col-reverse justify-center items-center" >
+				<Image src={Borgeful} alt="Borgeful" class="w-4/5 ml-auto" />
+				<Image src={BorgefulTitle} alt="Borgeful" class="mr-auto relative left-12 top-8 h-10 -rotate-8 w-auto" />
+			</div>
+			<div class="flex flex-col justify-center items-center relative bottom-10 ml-4" >
+				<Image src={Doctrove} alt="Borgeful" class="w-4/5 mr-auto " />
+				<Image src={DoctroveTitle} alt="Borgeful" class="mr-auto h-10 w-auto relative bottom-1" />
+			</div>
+		</div>
+
+		<!-- Passe passe store -->
+
+		<div>
+
+		</div>
+
+		<div class="flex flex-col justify-center items-center" >
+
+		</div>
+
+
+	</section>
+
+	<section class="px-20 flex flex-col" >
+		<header>
+			<Image src={Vendredi} alt="Vendredi" />
+		</header>
+		<div>
+			<Image src={CarnagePiknik} alt="Carnage Piknik" />
+			<Image src={CarnagePiknikTitle} alt="Carnage Piknik" />
+		</div>
+		<div>
+			<Image src={LeoHoward} alt="Leo Howard" />
+			<Image src={LeoHowardTitle} alt="Leo Howard" />
+		</div>
+
+	</section>
+
+	<section class="px-20 flex flex-col" >
+		<header>
+			<Image src={Samedi} alt="Samedi" />
+		</header>
+		<div>
+			<Image src={SodomEtSagesse} alt="Sodom et Sagesse" />
+			<Image src={SodomEtSagesseTitle} alt="Sodom et Sagesse" />
+		</div>
+
+
+		<div>
+			<Image src={Tori} alt="Tori" />
+			<Image src={ToriTitle} alt="Tori" />
+		</div>
+
+		<div>
+			<Image src={Vetuste} alt="Vetuste" />
+			<Image src={VetusteTitle} alt="Vetuste" />
+		</div>
+
+		<Image src={TextSamedi21} alt="Text Samedi 21" />
+	</section>
+
+	<footer slot="footer" class="px-20 flex flex-row items-center justify-center gap-10" > 
+		<Image src={Arrow} alt="Arrow" />
+		<Image src={Billetterie} alt="Billetterie" />
+	</footer>
+</Layout>
+
+
+
