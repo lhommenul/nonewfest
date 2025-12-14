@@ -55,13 +55,25 @@ import BorgefulTitle from "../images/la-ville/samedi-21/borgue-title.png";
 import Doctrove from "../images/la-ville/samedi-21/doctrove-image.png";
 import DoctroveTitle from "../images/la-ville/samedi-21/doctrove-title.png";
 
+// PasseStore
+import PasseStore from "../images/la-ville/passe-store/title.png";
+
+// BAND LEO HOWARD
+import LeoHoward from "../images/la-ville/passe-store/leo-image.png";
+import LeoHowardTitle from "../images/la-ville/passe-store/leo-title.png";
+
+// BAND TORI
+import Tori from "../images/la-ville/passe-store/tori-image.png";
+import ToriTitle from "../images/la-ville/passe-store/tori-title.png";
+
+// ===== SAMEDI 26
+import Samedi28Title from "../images/la-ville/samedi-28/title.png";
+import Samedi28Subtitle from "../images/la-ville/samedi-28/subtitle.png";
+
+
 // BAND CARNAGE PIKNIK
 import CarnagePiknik from "../images/bands/before/carnage_piknik/image.png";
 import CarnagePiknikTitle from "../images/bands/before/carnage_piknik/title.png";
-
-// BAND LEO HOWARD
-import LeoHoward from "../images/bands/before/leo_howard/image.png";
-import LeoHowardTitle from "../images/bands/before/leo_howard/title.png";
 
 
 // BAND SODOM ET SAGESSE
@@ -71,10 +83,6 @@ import SodomEtSagesseTitle from "../images/bands/before/sodom_et_sagesse/title.p
 // BAND THIBAULT FLORENT
 import ThibaultFlorent from "../images/bands/before/thibault_florent/image.png";
 import ThibaultFlorentTitle from "../images/bands/before/thibault_florent/title.png";
-
-// BAND TORI
-import Tori from "../images/bands/before/tori/image.png";
-import ToriTitle from "../images/bands/before/tori/title.png";
 
 // BAND VETUSTE
 import Vetuste from "../images/bands/before/vetuste/image.png";
@@ -171,7 +179,7 @@ import Header from "../components/Header.astro"
 			<Image src={TextSamedi21Subtitle} alt="" class="ml-auto h-28 w-auto relative bottom-18 left-4 -rotate-2" />
 		</div>
 
-		<div class="flex flex-col justify-center items-center" >
+		<div class="flex flex-col justify-center items-center px-7" >
 			<div class="flex flex-col-reverse justify-center items-center" >
 				<Image src={Borgeful} alt="Borgeful" class="w-4/5 ml-auto" />
 				<Image src={BorgefulTitle} alt="Borgeful" class="mr-auto relative left-12 top-8 h-10 -rotate-8 w-auto" />
@@ -184,54 +192,48 @@ import Header from "../components/Header.astro"
 
 		<!-- Passe passe store -->
 
-		<div>
+		<div class="px-7">
+			<Image src={PasseStore} alt="passe store" class="mx-auto" />
+		</div> 
 
+		<div class="flex flex-col justify-center items-center px-7" >
+			<div class="flex flex-col-reverse justify-center items-center ml-auto" >
+				<Image src={Tori} alt="Tori" class="w-6/8 ml-auto" />
+				<Image src={ToriTitle} alt="Tori" class="mr-auto relative left-12 h-10 w-auto top-4" />
+			</div>
+			<div class="flex flex-col-reverse justify-center items-center" >
+				<Image src={LeoHowardTitle} alt="Leo Howard" class="relative bottom-6 left-10 h-12 w-auto" />
+				<Image src={LeoHoward} alt="Leo Howard" class="w-6/8 mr-auto ml-4" />
+			</div>
 		</div>
 
+
+	</section>
+
+	<section class="flex flex-col" >
+		<header class="px-7 flex flex-col justify-center items-center w-full" >
+			<Image src={Samedi28Title} alt="Samedi26Title" class="w-full" />
+			<Image src={Samedi28Subtitle} alt="Samedi28Subtitle" class="w-3/5 relative bottom-16 left-14" />
+		</header>
 		<div class="flex flex-col justify-center items-center" >
-
+			<div class="flex flex-col justify-center items-center" >
+				<Image src={CarnagePiknik} alt="Carnage Piknik" />
+				<Image src={CarnagePiknikTitle} alt="Carnage Piknik" class="ml-auto relative left-8 bottom-4" />
+			</div>
+	
+			<div class="flex flex-col justify-center items-center ml-auto" >
+				<Image src={VetusteTitle} alt="Vetuste" class="mr-auto relative right-6 top-4" />
+				<Image src={Vetuste} alt="Vetuste" />
+			</div>
+			<div class="flex flex-col justify-center items-center mr-auto ml-12" >
+				<Image src={SodomEtSagesse} alt="Sodom et Sagesse" />
+				<Image src={SodomEtSagesseTitle} alt="Sodom et Sagesse" class="mr-auto relative bottom-3 right-6" />
+			</div>
 		</div>
 
 
 	</section>
 
-	<section class="px-20 flex flex-col" >
-		<header>
-			<Image src={Vendredi} alt="Vendredi" />
-		</header>
-		<div>
-			<Image src={CarnagePiknik} alt="Carnage Piknik" />
-			<Image src={CarnagePiknikTitle} alt="Carnage Piknik" />
-		</div>
-		<div>
-			<Image src={LeoHoward} alt="Leo Howard" />
-			<Image src={LeoHowardTitle} alt="Leo Howard" />
-		</div>
-
-	</section>
-
-	<section class="px-20 flex flex-col" >
-		<header>
-			<Image src={Samedi} alt="Samedi" />
-		</header>
-		<div>
-			<Image src={SodomEtSagesse} alt="Sodom et Sagesse" />
-			<Image src={SodomEtSagesseTitle} alt="Sodom et Sagesse" />
-		</div>
-
-
-		<div>
-			<Image src={Tori} alt="Tori" />
-			<Image src={ToriTitle} alt="Tori" />
-		</div>
-
-		<div>
-			<Image src={Vetuste} alt="Vetuste" />
-			<Image src={VetusteTitle} alt="Vetuste" />
-		</div>
-
-		<Image src={TextSamedi21} alt="Text Samedi 21" />
-	</section>
 
 	<footer slot="footer" class="px-20 flex flex-row items-center justify-center gap-10" > 
 		<Image src={Arrow} alt="Arrow" />
