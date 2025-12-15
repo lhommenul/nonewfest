@@ -103,7 +103,7 @@ import Header from "../components/Header.astro"
 
 <Layout title="NO NEW FEST - Before">
 	<Header />
-	<section class=" flex flex-col" >
+	<section class=" flex flex-col max-w-[1440px] lg:mx-auto" >
 		<h2 class="mx-auto px-7" >
 			<Image src={BeforeHeadTitle} alt="description de l'event" class="visible md:hidden w-full" />
 			<Image src={BeforeHeadTitleDesktop} alt="description de l'event" class="hidden md:block" />
@@ -114,8 +114,8 @@ import Header from "../components/Header.astro"
 
 		<div class="flex justify-center items-center flex-col h-fit px-7" >
 
-			<Image src={TextSamedi7} alt="Text Samedi 07" class="mr-auto lg:mx-auto" />
-			<Image src={TextSamedi7Subtitle} alt="Text Samedi 07" class="h-18 w-fit ml-auto relative bottom-12 lg:mx-auto lg:left-90 lg:bottom-22" />
+			<Image src={TextSamedi7} alt="Text Samedi 07" class="mr-auto lg:mx-auto lg:max-w-[700px]" />
+			<Image src={TextSamedi7Subtitle} alt="Text Samedi 07" class="h-18 lg:h-24 w-fit ml-auto relative bottom-12 lg:mx-auto lg:left-60 lg:bottom-22 lg:max-w-[162px]" />
 
 		</div>
 
@@ -132,9 +132,9 @@ import Header from "../components/Header.astro"
 
 		<!-- SAMEDI 14 -->
 
-		<div class="mx-auto px-7" >
-			<Image src={TextSamedi14} alt="Text Samedi 14" class="mx-auto" />
-			<Image src={TextSamedi14Subtitle} alt="Text Samedi 14" class="mx-auto h-26 ml-auto w-fit relative left-14 bottom-4" />
+		<div class="mx-auto px-7 lg:mt-[458px] lg:ml-auto lg:mr-0" >
+			<Image src={TextSamedi14} alt="Text Samedi 14" class="mx-auto lg:max-w-[701px]" />
+			<Image src={TextSamedi14Subtitle} alt="Text Samedi 14" class="mx-auto h-26 ml-auto w-fit relative left-14 bottom-4 lg:ml-auto lg:mr-26" />
 		</div>
 
 		<div class="mx-auto flex flex-col mt-6 justify-center items-center px-7" >
@@ -161,12 +161,12 @@ import Header from "../components/Header.astro"
 		<div class="flex flex-col justify-center items-center" >
 
 			<div class="flex justify-center items-center flex-col-reverse" >
-				<Image src={ArsenDoline} alt="Arsen Doline" class="w-2/3 ml-auto" />
+				<Image src={ArsenDoline} alt="Arsen Doline" class="w-2/3 ml-auto max-w-[637px] lg:mr-auto lg:ml-0" />
 				<Image src={ArsenDolineTitle} alt="Arsen Doline" class=" relative top-4 right-14 -rotate-6 h-10 w-auto" />
 			</div>
 
 			<div class="flex justify-center items-center flex-col w-full relative bottom-2" >
-				<Image src={ThibaultFlorent} alt="Thibault Florent" class="w-full" />
+				<Image src={ThibaultFlorent} alt="Thibault Florent" class="w-full max-w-[707px]" />
 				<Image src={ThibaultFlorentTitle} alt="Thibault Florent" class="mr-auto relative bottom-2" />
 			</div>
 
