@@ -10,10 +10,12 @@ const daysUntilEvent = Math.ceil((eventDate.getTime() - new Date().getTime()) / 
 
 
 <header class="flex justify-between items-center px-6 py-5 container mx-auto h-fit">
-    <h1 class="font-bold font-maven flex flex-col leading-[0.7] lg:flex-row lg:text-4xl lg:gap-2 text-xl">
-        <span>NO</span>
-        <span>NEW</span>
-        <span>FEST</span>
-    </h1>
+    <a href="/" class="hover:underline focus:underline">
+        <h1 class="font-bold font-maven flex flex-col leading-[0.7] lg:flex-row lg:text-4xl lg:gap-2 text-xl">
+            <span>NO</span>
+            <span>NEW</span>
+            <span>FEST</span>
+        </h1>
+    </a>
     <span class="font-maven font-bold text-xl lg:text-4xl" >J - {daysUntilEvent}</span>
 </header>
