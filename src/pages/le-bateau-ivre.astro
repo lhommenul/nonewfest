@@ -24,6 +24,7 @@ import GunsTitle from "../images/le-bateau-ivre/jeudi-19/guns-title.png"
 import GunsImage from "../images/le-bateau-ivre/jeudi-19/guns-image.png"
 
 import Jeudi19MarsDescription from "../images/le-bateau-ivre/jeudi-19/description.png"
+import Jeudi19MarsDescriptionDesktop from "../images/le-bateau-ivre/jeudi-19/description_desktop.png"
 
 // VENDREDI 20 MARS
 import Vendredi20Mars from "../images/le-bateau-ivre/vendredi-20/title.png"
@@ -48,6 +49,7 @@ import GeysirTitle from "../images/le-bateau-ivre/vendredi-20/geysir-title.png"
 import GeysirImage from "../images/le-bateau-ivre/vendredi-20/geysir-image.png"
 
 import VendrediDescription from "../images/le-bateau-ivre/vendredi-20/description.png"
+import VendrediDescriptionDesktop from "../images/le-bateau-ivre/vendredi-20/description_desktop.png"
 
 //SAMEDI 21 MARS
 
@@ -69,6 +71,7 @@ import BongoImage from "../images/le-bateau-ivre/samedi-21/bongo-image.png"
 import BongoTitle from "../images/le-bateau-ivre/samedi-21/bongo-title.png"
 
 import Samedi21MarsDescription from "../images/le-bateau-ivre/samedi-21/description.png"
+import Samedi21MarsDescriptionDesktop from "../images/le-bateau-ivre/samedi-21/description_desktop.png"
 ---
 
 <Layout title="NO NEW FEST - Le Bateau Ivre">
@@ -112,47 +115,49 @@ import Samedi21MarsDescription from "../images/le-bateau-ivre/samedi-21/descript
 
 			</div>
 
-			<Image src={Jeudi19MarsDescription} alt="description" class="mx-auto mt-[32px]" />
+			<Image src={Jeudi19MarsDescription} alt="description" class="mx-auto mt-[32px] lg:hidden" />
+			<Image src={Jeudi19MarsDescriptionDesktop} alt="description" class="mx-auto mt-[86px] hidden lg:block" />
 
 		</section>
 
 		<!-- VENDREDI 20 MARS -->
 
-		<section class="flex flex-col justify-center items-center mt-[80px]" >
-			<header>
-				<Image src={Vendredi20Mars} alt="Arrow" class="mx-auto mt-[20px] w-[184px]" />		
+		<section class="flex flex-col justify-center items-center mt-[80px] lg:mt-0" >
+			<header class="mt-[20px] lg:mt-[294px] lg:ml-auto" >
+				<Image src={Vendredi20Mars} alt="Arrow" class="mx-auto w-[184px] lg:w-[708px]" />		
 			</header>
 
-			<div class="flex flex-col justify-center items-center w-full" >
+			<div class="flex flex-col justify-center items-center w-full mt-[64px] lg:mt-[138px] lg:max-h-[2100px] lg:relative lg:top-100" >
 
-				<div class="flex flex-col justify-center items-center mr-auto mt-[64px]" >
-					<Image src={WhatTitle} alt="WhatTitle" class="w-[216px] h-auto relative right-6" />	
-					<Image src={WhatImage} alt="WhatImage" class="w-[267px] h-auto" />		
+				<div class="flex flex-col justify-center items-center mr-auto lg:mx-auto lg:relative lg:right-52" >
+					<Image src={WhatTitle} alt="WhatTitle" class="w-[216px] lg:w-[304px] h-auto relative right-6 lg:relative lg:right-52" />	
+					<Image src={WhatImage} alt="WhatImage" class="w-[267px] lg:w-[554px] h-auto" />		
 				</div>
 
-				<div class="flex flex-col justify-center items-center mx-auto mt-[58px]" >
-					<Image src={MotoImage} alt="MotoImage" class="w-[258px] h-auto" />	
-					<Image src={MotoTitle} alt="MotoTitle" class="w-[146px] h-auto relative right-20" />		
+				<div class="flex flex-col justify-center items-center mx-auto mt-[58px] lg:relative lg:bottom-16" >
+					<Image src={MotoImage} alt="MotoImage" class="w-[258px] lg:w-[719px] h-auto" />	
+					<Image src={MotoTitle} alt="MotoTitle" class="w-[146px] lg:w-[296px] h-auto relative right-20 lg:right-70 lg:bottom-8" />		
 				</div>
 
-				<div class="flex flex-col justify-center items-center ml-auto mt-[73px]" >
-					<Image src={GeysirTitle} alt="GeysirTitle" class="w-[74px] h-auto relative right-29 top-2" />		
-					<Image src={GeysirImage} alt="GeysirImage" class="w-[208px] h-auto" />	
+				<div class="flex flex-col justify-center items-center ml-auto mt-[73px] lg:flex-col-reverse lg:mx-auto lg:relative lg:left-60 lg:bottom-50 lg:z-20" >
+					<Image src={GeysirTitle} alt="GeysirTitle" class="w-[74px] lg:w-[155px] h-auto relative right-29 top-2 lg:-right-45 lg:-top-12" />		
+					<Image src={GeysirImage} alt="GeysirImage" class="w-[208px] lg:w-[436px] h-auto" />	
 				</div>
 
-				<div class="flex flex-col justify-center items-center mr-auto mt-[71px]" >
-					<Image src={NueitImage} alt="NueitImage" class="w-[226px] h-auto " />	
-					<Image src={NueitTitle} alt="NueitTitle" class="w-[87px] h-auto relative left-25 bottom-2 " />		
+				<div class="flex flex-col justify-center items-center mr-auto mt-[71px] lg:mx-auto lg:mt-0 lg:relative lg:bottom-120 lg:right-53" >
+					<Image src={NueitImage} alt="NueitImage" class="w-[226px] lg:w-[471px] h-auto " />	
+					<Image src={NueitTitle} alt="NueitTitle" class="w-[87px] lg:w-[181px] h-auto relative left-25 bottom-2 lg:relative lg:-left-50" />		
 				</div>
 
-				<div class="flex flex-row justify-center items-center ml-auto mt-[61px]" >
-					<Image src={TachTitle} alt="TachTitle" class="w-[139px] h-auto -rotate-90 relative left-14" />		
-					<Image src={TachImage} alt="TachImage" class="w-[179px] h-auto" />	
+				<div class="flex flex-row justify-center items-center ml-auto mt-[61px] lg:mt-0 lg:mx-auto lg:flex-col-reverse lg:relative lg:bottom-195 lg:left-52" >
+					<Image src={TachTitle} alt="TachTitle" class="w-[139px] lg:w-[288px] h-auto -rotate-90 lg:rotate-0 relative left-14" />		
+					<Image src={TachImage} alt="TachImage" class="w-[179px] lg:w-[374px] h-auto" />	
 				</div>
 
 			</div>
 
-			<Image src={VendrediDescription} alt="description" class="mt-[33px] mx-auto" ></Image>
+			<Image src={VendrediDescription} alt="description" class="mt-[33px] mx-auto lg:hidden" ></Image>
+			<Image src={VendrediDescriptionDesktop} alt="description" class="mt-[71px] mx-auto hidden lg:block" ></Image>
 
 		</section>
 
