@@ -51,7 +51,7 @@ import GeysirImage from "../images/le-bateau-ivre/vendredi-20/geysir-image.png"
 import VendrediDescription from "../images/le-bateau-ivre/vendredi-20/description.png"
 import VendrediDescriptionDesktop from "../images/le-bateau-ivre/vendredi-20/description_desktop.png"
 
-//SAMEDI 21 MARS
+// SAMEDI 21 MARS
 
 import Samedi21Mars from "../images/le-bateau-ivre/samedi-21/title.png"
 
@@ -72,6 +72,10 @@ import BongoTitle from "../images/le-bateau-ivre/samedi-21/bongo-title.png"
 
 import Samedi21MarsDescription from "../images/le-bateau-ivre/samedi-21/description.png"
 import Samedi21MarsDescriptionDesktop from "../images/le-bateau-ivre/samedi-21/description_desktop.png"
+
+// billeterie
+import Billetterie from "../images/le-bateau-ivre/billetterie/title.png"
+import Arrow from "../images/le-bateau-ivre/billetterie/arrow.png"
 ---
 
 <Layout title="NO NEW FEST - Le Bateau Ivre">
@@ -164,49 +168,50 @@ import Samedi21MarsDescriptionDesktop from "../images/le-bateau-ivre/samedi-21/d
 		<!-- SAMEDI 21 MARS -->
 
 		<section class="flex flex-col justify-center items-center mt-[80px]" >
-			<header>
-				<Image src={Samedi21Mars} alt="Arrow" class="mx-auto mt-[80px] w-[224px]" />		
+			<header class="lg:mr-auto" >
+				<Image src={Samedi21Mars} alt="Arrow" class="mx-auto mt-[80px] w-[224px] lg:w-[636px]" />		
 			</header>
 
 			<div class="flex flex-col justify-center items-center w-full mt-[44px]" >
 
-				<div class="flex flex-col justify-center items-center relative right-8" >
-					<Image src={TvamImage} alt="WhatImage" class="w-[240px] h-auto" />
-					<Image src={TvamTitle} alt="WhatTitle" class="w-[72px] h-auto relative right-25 bottom-4" />
+				<div class="flex flex-col justify-center items-center relative right-8 lg:mx-auto lg:right-40 lg:mt-[112px]" >
+					<Image src={TvamImage} alt="WhatImage" class="w-[240px] h-auto lg:w-[473px]" />
+					<Image src={TvamTitle} alt="WhatTitle" class="w-[72px] lg:w-[192px] h-auto relative right-25 bottom-4 lg:bottom-136 lg:right-50" />
 				</div>
 
 
-				<div class="flex flex-col justify-center items-center relative left-20 mt-[77px]" >
-					<Image src={KatyaTitle} alt="WhatTitle" class="w-[209px] h-auto relative right-19 top-2 -rotate-6" />
-					<Image src={KatyaImage} alt="WhatImage" class="w-[211px] h-auto" />
+				<div class="flex flex-col justify-center items-center relative left-20 mt-[77px] lg:mt-0 lg:mx-auto lg:left-77 lg:bottom-100" >
+					<Image src={KatyaTitle} alt="WhatTitle" class="w-[209px] lg:w-[474px] h-auto relative right-19 top-2 lg:top-4 -rotate-6 lg:-right-33 lg:rotate-2" />
+					<Image src={KatyaImage} alt="WhatImage" class="w-[211px] lg:w-[475px] h-auto" />
 				</div>
 
-				<div class="flex flex-col justify-center items-center relative mx-auto mt-[47px]" >
-					<Image src={FoudreTitle} alt="WhatTitle" class="w-[96px] relative right-30 top-28 h-auto rotate-90" />
-					<Image src={FoudreImage} alt="WhatImage" class="w-[208px] h-auto" />
+				<div class="flex flex-col justify-center items-center relative mx-auto mt-[47px] lg:mt-0" >
+					<Image src={FoudreTitle} alt="WhatTitle" class="w-[96px] lg:w-[231px] relative right-30 top-28 h-auto rotate-90" />
+					<Image src={FoudreImage} alt="WhatImage" class="w-[208px] lg:w-[433px] h-auto" />
 				</div>
 
-				<div class="flex flex-col justify-center items-center mx-auto mt-[115px] relative right-18" >
-					<Image src={PoliTitle} alt="BongoTitle" class="w-[261px] h-auto relative left-18" />
-					<Image src={PoliImage} alt="BongoImage" class="w-[226px] h-auto" />
+				<div class="flex flex-col justify-center items-center mx-auto mt-[115px] lg:mt-0 relative right-18" >
+					<Image src={PoliTitle} alt="BongoTitle" class="w-[261px] lg:w-[544px] h-auto relative left-18" />
+					<Image src={PoliImage} alt="BongoImage" class="w-[226px] lg:w-[471px] h-auto" />
 				</div>
 
-				<div class="flex flex-col justify-center items-center mt-[70px] mx-auto" >
-					<Image src={BongoImage} alt="BongoImage" class="w-[288px] h-auto" />
-					<Image src={BongoTitle} alt="BongoTitle" class="w-[132px] h-auto relative left-22" />
+				<div class="flex flex-col justify-center items-center mt-[70px] mx-auto lg:mt-0" >
+					<Image src={BongoImage} alt="BongoImage" class="w-[288px] lg:w-[599px] h-auto" />
+					<Image src={BongoTitle} alt="BongoTitle" class="w-[132px] lg:w-[279px] h-auto relative left-22" />
 				</div>
 
 			</div>
 
-			<Image src={Samedi21MarsDescription} alt="description" class="mt-[55px] mx-auto" />
+			<Image src={Samedi21MarsDescription} alt="description" class="mt-[55px] mx-auto lg:hidden" />
+			<Image src={Samedi21MarsDescriptionDesktop} alt="description" class="mt-[79px] mx-auto hidden lg:block" />
 
 		</section>
 
 	</div>
 
+	<footer class="mx-auto flex flex-col justify-center h-[150px]" > 
+		<Image src={Arrow} alt="Arrow" class="mx-auto w-[165px] h-auto relative right-44" />
+		<Image src={Billetterie} alt="Billetterie" class="w-[192px] h-auto mx-auto relative bottom-7" />
+	</footer>
 
-	<!-- <footer class="px-20 grid grid-cols-1 grid-rows-1 mt-22" > 
-		<Image src={Arrow} alt="Arrow" class="col-start-1 row-start-1 relative rotate-180 right-34 bottom-18" />
-		<Image src={Billetterie} alt="Billetterie" class="col-start-1 row-start-1" />
-	</footer> -->
 </Layout>
