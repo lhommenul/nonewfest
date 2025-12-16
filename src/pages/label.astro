@@ -2,28 +2,33 @@
 import Layout from "../layouts/index.astro";
 
 import { Image } from "astro:assets";
-import banner from "../images/banner.jpg";
-import playlist from "../images/playlist.png"
-import playlistText from "../images/playlist_text.png"
-import email from "../images/email.jpg"
-import instagram from "../images/instagram.jpg"
+import banner from "../images/label/picture.jpg";
+import playlist from "../images/label/playlist.png"
+import playlistText from "../images/label/description.png"
+import playlistTextDesktop from "../images/label/description_desktop.png"
+import email from "../images/label/email.png"
+import instagram from "../images/label/instagram.png"
+
+import Header from "../components/Header.astro"
 ---
 
 <Layout title="NO NEW FEST">
-	<Image src={banner} alt="Banner" class="mx-auto lg:max-w-5xl" />
+	<Header />
+	<Image src={banner} alt="Banner" class="mx-auto mt-2 sm:mb-[63px] sm:mt-8" />
 
-	<article class="px-10 py-10 flex flex-col items-center justify-center gap-10" >
-		<h2 class="grid grid-cols-1 row-cols-1 justify-items-center items-center w-38 lg:w-60" >
-			<Image src={playlist} alt="Playlist" class="w-full lg:w-90" />
-		</h2>
-		<Image src={playlistText} alt="" class="w-full lg:px-14 lg:max-w-5xl" />
-	</article>
+	<div class="mt-6 px-6 sm:mt[33px] max-w-[1021px] mx-auto" >
+		<a href="https://youtube.com/playlist?list=PLi_86_tcBWl9KvYnqtGo77qkx2GGsbJqR&si=fcnXjW7wLs8S8X1o" target="_blank" >
+			<Image src={playlist} alt="Playlist" class="mx-auto w-[163px] sm:w-[331px]" />
+		</a>
+		<Image src={playlistText} alt="" class="mx-auto w-full sm:hidden" />
+		<Image src={playlistTextDesktop} alt="" class="mx-auto w-full hidden sm:block mt-[59px]" />
+	</div>
 
-	<footer slot="footer" class="flex flex-row justify-between items-center px-10 py-10 w-full mx-auto container" >
-		<a href="mailto:reversetapes@gmail.com" target="_blank" class="w-40" >
+	<footer class="px-8 mx-auto flex flex-row sm:flex-col-reverse items-center justify-between mb-8 sm:mt-[33px] max-w-[1440px]" >
+		<a href="mailto:reversetapes@gmail.com" target="_blank" class="w-[173px] sm:w-[357px] ml-auto" >
 			<Image src={email} alt="Email" />
 		</a>
-		<a href="https://www.instagram.com/reversetapes/" target="_blank" >
+		<a href="https://www.instagram.com/reversetapes/" target="_blank" class="w-[32px] sm:w-[53px] sm:ml-auto sm:relative sm:right-4 sm:mt-[130px]" >
 			<Image src={instagram} alt="Instagram" />
 		</a>
 	</footer>
