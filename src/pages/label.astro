@@ -8,13 +8,15 @@ import playlistText from "../images/label/description.png"
 import playlistTextDesktop from "../images/label/description_desktop.png"
 import email from "../images/label/email.png"
 import instagram from "../images/label/instagram.png"
+import aftermovievideo from "../video/aftermovie.mov"
 
 import Header from "../components/Header.astro"
 ---
 
 <Layout title="NO NEW FEST">
 	<Header />
-	<Image src={banner} alt="Banner" class="mx-auto mt-2 sm:mb-[63px] sm:mt-8" />
+	<!-- <Image src={banner} alt="Banner"  /> -->
+	<video src={aftermovievideo} autoplay class="mx-auto mt-2 sm:mb-[63px] sm:mt-8" ></video>
 
 	<div class="mt-6 px-6 sm:mt[33px] max-w-[1021px] mx-auto" >
 		<a href="https://youtube.com/playlist?list=PLi_86_tcBWl9KvYnqtGo77qkx2GGsbJqR&si=fcnXjW7wLs8S8X1o" target="_blank" >
