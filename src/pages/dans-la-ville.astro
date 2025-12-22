@@ -48,7 +48,7 @@ import ArsenDolineTitle from "../images/la-ville/mercredi-18/arsen-title.png";
 
 // ===== SAMEDI 21
 import TextSamedi21 from "../images/la-ville/samedi-21/title.png";
-import TextSamedi21Subtitle from "../images/la-ville/samedi-21/subtitle.png";
+import TextSamedi21Subtitle from "../images/la-ville/passe-store/title.png";
 
 // BAND BORGEFUL
 import Borgeful from "../images/la-ville/samedi-21/borgue-image.png";
@@ -59,7 +59,7 @@ import Doctrove from "../images/la-ville/samedi-21/doctrove-image.png";
 import DoctroveTitle from "../images/la-ville/samedi-21/doctrove-title.png";
 
 // PasseStore
-import PasseStore from "../images/la-ville/passe-store/title.png";
+import AtMaisonMaison from "../images/la-ville/samedi-21/subtitle.png";
 
 // BAND LEO HOWARD
 import LeoHoward from "../images/la-ville/passe-store/leo-image.png";
@@ -73,6 +73,8 @@ import ToriTitle from "../images/la-ville/passe-store/tori-title.png";
 import Samedi28Title from "../images/la-ville/samedi-28/title.png";
 import Samedi28Subtitle from "../images/la-ville/samedi-28/subtitle.png";
 
+import ATMTitle from "../images/la-ville/mercredi-18/atm-title.png";
+import ATMImage from "../images/la-ville/mercredi-18/atm-image.png";
 
 // BAND CARNAGE PIKNIK
 import CarnagePiknik from "../images/la-ville/samedi-28/carnage-image.png";
@@ -164,21 +166,43 @@ import Header from "../components/Header.astro"
 				<Image onclick="window.open('https://youtu.be/01j4cp8jXSQ?si=QNuSVMAEtPHmQoYX', '_blank')" src={ArsenDolineTitle} alt="Arsen Doline" class=" relative top-4 right-14 -rotate-6 h-10 w-auto lg:-right-80 lg:h-[45px] lg:rotate-2" />
 			</div>
 
-			<div class="flex justify-center items-center flex-col w-full relative bottom-2" >
+			<div class="flex justify-center items-center flex-col w-full relative bottom-6" >
+				<Image onclick="window.open('https://youtu.be/EuU9P6qs5YU?si=dWeu2-w8AScfLAQi', '_blank')" src={ThibaultFlorentTitle} alt="Thibault Florent" class="h-auto w-[164px] relative right-26" />
 				<Image onclick="window.open('https://youtu.be/EuU9P6qs5YU?si=dWeu2-w8AScfLAQi', '_blank')" src={ThibaultFlorent} alt="Thibault Florent" class="w-full max-w-[707px] lg:relative lg:left-40" />
-				<Image onclick="window.open('https://youtu.be/EuU9P6qs5YU?si=dWeu2-w8AScfLAQi', '_blank')" src={ThibaultFlorentTitle} alt="Thibault Florent" class="relative bottom-2 h-5 mr-auto lg:h-[37px] w-auto lg:left-70" />
+			</div>
+
+			<div class="flex justify-center items-center flex-col relative bottom-4" >
+				<Image src={ATMImage} alt="ATMImage" class="h-auto w-[300px] relative left-9 bottom-3" />
+				<Image src={ATMTitle} alt="ATMTitle" class="h-auto w-[217px] relative bottom-4 right-14" />
 			</div>
 
 		</div>
 
 		<!-- SAMEDI 21 -->
 
-		<div class="flex flex-col justify-center items-center px-7 lg:mr-12" >
-			<Image src={TextSamedi21} alt="" class="-rotate-4 lg:mt-[403px] lg:ml-auto lg:mr-0" />
-			<Image src={TextSamedi21Subtitle} alt="" class="ml-auto h-28 w-auto relative bottom-12 left-4 -rotate-2 lg:bottom-12" />
+		<div class="flex flex-col justify-center items-center px-7 lg:mr-12 mt-[150px]" >
+			<Image src={TextSamedi21} alt="" class="-rotate-4 lg:mt-[403px] w-[342px] h-auto lg:ml-auto lg:mr-0" />
+			<Image src={TextSamedi21Subtitle} alt="" class="h-auto w-[212px] relative bottom-4 right-19 -rotate-2 lg:bottom-12" />
 		</div>
 
 		<div class="flex flex-col justify-center items-center px-7" >
+			<a class="flex flex-col-reverse justify-center items-center ml-auto lg:mb-60" href="https://tori-tori.bandcamp.com/album/tori-a" target="_blank" >
+				<Image onclick="window.open('https://tori-tori.bandcamp.com/album/tori-a', '_blank')"	 src={Tori} alt="Tori" class="w-[213px]" />
+				<Image onclick="window.open('https://tori-tori.bandcamp.com/album/tori-a', '_blank')"	 src={ToriTitle} alt="Tori" class="w-[60px] relative right-25 top-3" />
+			</a>
+			<a class="relative right-8 flex flex-col-reverse justify-center items-center" href="https://youtu.be/Ef_W4Ltc820?si=dEkoJW6LYpg782-m" target="_blank" >
+				<Image onclick="window.open('https://youtu.be/Ef_W4Ltc820?si=dEkoJW6LYpg782-m', '_blank')" src={LeoHowardTitle} alt="Leo Howard" class="w-[160px] relative left-22 bottom-5" />
+				<Image onclick="window.open('https://youtu.be/Ef_W4Ltc820?si=dEkoJW6LYpg782-m', '_blank')" src={LeoHoward} alt="Leo Howard" class="w-[201px]" />
+			</a>
+		</div>
+
+		<!-- Maison maison -->
+
+		<div class="flex flex-col justify-center items-center px-7 mt-[104px] mb-[20px]">
+			<Image src={AtMaisonMaison} alt="passe store" class="mx-auto w-[278px] relative right-6" />
+		</div> 
+
+		<div class="flex flex-col justify-center items-center px-7 lg:flex-row lg:mx-auto lg:px-28" >
 			<div class="flex flex-col-reverse justify-center items-center" >
 				<Image onclick="window.open('https://youtu.be/1C9EhTZlI8w?si=RuhHF3c0h9BbGzfa', '_blank')" src={Borgeful} alt="Borgeful" class="w-4/5 ml-auto" />
 				<Image onclick="window.open('https://youtu.be/1C9EhTZlI8w?si=RuhHF3c0h9BbGzfa', '_blank')" src={BorgefulTitle} alt="Borgeful" class="mr-auto relative left-12 top-8 h-10 -rotate-8 w-auto" />
@@ -187,23 +211,6 @@ import Header from "../components/Header.astro"
 				<Image src={Doctrove} alt="Borgeful" class="w-4/5 mr-auto " />
 				<Image src={DoctroveTitle} alt="Borgeful" class="mr-auto h-10 w-auto relative bottom-1 lg:ml-auto lg:mr-0 lg:right-8 lg:bottom-6" />
 			</div>
-		</div>
-
-		<!-- Passe passe store -->
-
-		<div class="px-7">
-			<Image src={PasseStore} alt="passe store" class="mx-auto lg:mt-[400px] lg:mr-auto lg:ml-0" />
-		</div> 
-
-		<div class="flex flex-col justify-center items-center px-7 lg:flex-row lg:mx-auto lg:px-28" >
-			<a class="flex flex-col-reverse justify-center items-center ml-auto lg:mb-60" href="https://tori-tori.bandcamp.com/album/tori-a" target="_blank" >
-				<Image onclick="window.open('https://tori-tori.bandcamp.com/album/tori-a', '_blank')"	 src={Tori} alt="Tori" class="w-6/8 ml-auto max-w-[509px] lg:w-full" />
-				<Image onclick="window.open('https://tori-tori.bandcamp.com/album/tori-a', '_blank')"	 src={ToriTitle} alt="Tori" class="mr-auto relative left-12 h-10 w-auto top-4 lg:top-120 lg:h-[52px] lg:-left-10" />
-			</a>
-			<a class="flex flex-col-reverse justify-center items-center" href="https://youtu.be/Ef_W4Ltc820?si=dEkoJW6LYpg782-m" target="_blank" >
-				<Image onclick="window.open('https://youtu.be/Ef_W4Ltc820?si=dEkoJW6LYpg782-m', '_blank')" src={LeoHowardTitle} alt="Leo Howard" class="relative bottom-6 left-10 h-12 w-auto lg:left-60 lg:h-12" />
-				<Image onclick="window.open('https://youtu.be/Ef_W4Ltc820?si=dEkoJW6LYpg782-m', '_blank')" src={LeoHoward} alt="Leo Howard" class="w-6/8 mr-auto ml-4 max-w-[505px] lg:w-full" />
-			</a>
 		</div>
 
 	</section>
