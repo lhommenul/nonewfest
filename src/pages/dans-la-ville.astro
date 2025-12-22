@@ -14,13 +14,11 @@ import TextSamedi7 from "../images/la-ville/samedi-07/title.png";
 import TextSamedi7Subtitle from "../images/la-ville/samedi-07/subtitle.png";
 
 // BAND ATM SNIPER VICTIM
-import AtmSniperVictim from "../images/la-ville/samedi-07/atm-image.png";
-import AtmSniperVictimTitle from "../images/la-ville/samedi-07/atm-title.png";
+import RachelTitle from "../images/la-ville/samedi-07/rachel-title.png";
+import RachelImage from "../images/la-ville/samedi-07/rachel-image.png";
 
-// BAND PRAIRIE SHOOTING
-import PrairieShooting from "../images/la-ville/samedi-07/prairie-image.png";
-import PrairieShootingTitle from "../images/la-ville/samedi-07/prairie-title.png";
-
+import PrairieImage from "../images/la-ville/samedi-07/prairie-image.png";
+import PrairieTitle from "../images/la-ville/samedi-07/prairie-title.png";
 
 // ===== SAMEDI 14
 import TextSamedi14 from "../images/la-ville/samedi-14/title.png";
@@ -121,42 +119,42 @@ import Header from "../components/Header.astro"
 		</div>
 
 		<div class="mx-auto flex flex-col justify-center items-center px-7" >
-			<div class="flex flex-col justify-center items-center mx-8 z-20 w-full" >
-				<Image onclick="window.open('https://youtu.be/qr_QyxBYbnM?si=1Oc7nVQZhLrfm9yi', '_blank')" src={AtmSniperVictimTitle} alt="ATM Sniper Victim" class="relative left-16 top-4 h-6 w-auto lg:h-12 lg:left-32" />
-				<Image onclick="window.open('https://youtu.be/qr_QyxBYbnM?si=1Oc7nVQZhLrfm9yi', '_blank')" src={AtmSniperVictim} alt="ATM Sniper Victim" class="w-full max-w-[631px]" />
+			<div class="flex flex-col justify-center items-center" >
+				<Image src={RachelTitle} alt="" class="w-[292px] relative top-2 left-3" />
+				<Image src={RachelImage} alt="" class="w-[245px]" />
 			</div>
-			<div class="flex flex-col justify-center items-center mx-8 w-full relative bottom-4" >
-				<Image src={PrairieShooting} alt="Prairie Shooting" class="w-full h-auto max-w-[631px]" />
-				<Image src={PrairieShootingTitle} alt="Prairie Shooting" class="relative right-6 bottom-2 h-6 lg:h-12 w-auto" />
+			<div class="flex flex-col justify-center items-center relative bottom-1" >
+				<Image src={PrairieImage} alt="Prairie Shooting" class="w-[248px]" />
+				<Image src={PrairieTitle} alt="Prairie Shooting" class="w-[321px] relative right-3" />
 			</div>
 		</div>
 
 		<!-- SAMEDI 14 -->
 
-		<div class="mx-auto px-7 lg:mt-[458px] mt-[112px] lg:ml-auto lg:mr-0" >
-			<Image src={TextSamedi14} alt="Text Samedi 14" class="mx-auto lg:max-w-[701px]" />
-			<Image src={TextSamedi14Subtitle} alt="Text Samedi 14" class="mx-auto h-26 ml-auto w-fit relative left-14 bottom-4 lg:ml-auto lg:mr-26" />
+		<div class="mx-auto px-7 lg:mt-[458px] mt-[112px] lg:ml-auto lg:mr-0 h-[50px]" >
+			<Image src={TextSamedi14} alt="Text Samedi 14" class="mx-auto lg:max-w-[701px] w-[284px]" />
+			<Image src={TextSamedi14Subtitle} alt="Text Samedi 14" class="mx-auto h-auto ml-auto w-[158px] bottom-[5px] relative left-14 lg:ml-auto lg:mr-26" />
 		</div>
 
-		<div class="mx-auto flex flex-col mt-6 justify-center items-center px-7 lg:flex-row-reverse" >
+		<div class="mx-auto flex flex-col mt-6 justify-center items-center px-7 lg:flex-row-reverse relative bottom-4" >
 
 			<div class="flex flex-col-reverse justify-center items-center mb-auto z-20 lg:right-4 lg:relative lg:bottom-4"  >
-				<Image onclick="window.open('https://www.youtube.com/watch?v=qtXBC2HGF-A', '_blank')" src={PrixLibre} alt="Prix Libre" />
-				<Image onclick="window.open('https://www.youtube.com/watch?v=qtXBC2HGF-A', '_blank')" src={PrixLibreTitle} alt="Prix Libre" class="w-auto mr-auto relative left-4 top-8 h-12 lg:left-100 lg:top-14 lg:h-[49px]" />
+				<Image onclick="window.open('https://www.youtube.com/watch?v=qtXBC2HGF-A', '_blank')" src={PrixLibre} alt="Prix Libre" class="w-[249px]" />
+				<Image onclick="window.open('https://www.youtube.com/watch?v=qtXBC2HGF-A', '_blank')" src={PrixLibreTitle} alt="Prix Libre" class="w-[96px] h-auto mr-auto relative left-3 top-4 lg:left-100 lg:top-14" />
 			</div>
 
 			<div class="flex flex-col justify-center items-center mr-auto relative bottom-8 lg:left-4"  >
-				<Image src={Aesthesis} alt="Aesthesis" />
-				<Image src={AesthesisTitle} alt="Aesthesis" class="mr-auto relative bottom-5 left-4 h-7 w-auto lg:h-[49px]" />
+				<Image src={Aesthesis} alt="Aesthesis" class="w-[237px] relative right-2" />
+				<Image src={AesthesisTitle} alt="Aesthesis" class="mr-auto relative bottom-5 left-1 h-auto w-[104px]" />
 			</div>
 
 		</div>
 
 		<!-- MERCREDI 18 -->
 
-		<div class="flex flex-col justify-center items-center px-7 lg:mt-[536px] lg:px-20" >
-			<Image src={TextMercredi18} alt="" class="lg:h-[102px] lg:w-auto lg:mr-auto" />
-			<Image src={TextMercredi18Subtitle} alt="" class="ml-auto h-24 w-auto relative bottom-14 left-14 lg:w-auto lg:mr-auto lg:ml-0 lg:left-70 lg:h-[116px]" />
+		<div class="flex flex-col justify-center items-center px-7 h-[80px] mt-[90px] lg:mt-[536px] lg:px-20" >
+			<Image src={TextMercredi18} alt="" class="h-auto min-w-[347px] lg:w-auto lg:mr-auto" />
+			<Image src={TextMercredi18Subtitle} alt="" class="w-[250px] h-auto relative bottom-13 left-23 lg:w-auto lg:mr-auto lg:ml-0 lg:left-70" />
 		</div>
 
 		<div class="flex flex-col justify-center items-center lg:px-20" >
