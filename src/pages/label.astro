@@ -2,13 +2,11 @@
 import Layout from "../layouts/index.astro";
 
 import { Image } from "astro:assets";
-import banner from "../images/label/picture.jpg";
 import playlist from "../images/label/playlist.png"
 import playlistText from "../images/label/description.png"
 import playlistTextDesktop from "../images/label/description_desktop.png"
 import email from "../images/label/email.png"
 import instagram from "../images/label/instagram.png"
-import aftermovievideo from "../video/aftermovie.mov"
 
 import Header from "../components/Header.astro"
 ---
@@ -16,7 +14,7 @@ import Header from "../components/Header.astro"
 <Layout title="NO NEW FEST">
 	<Header />
 	<!-- <Image src={banner} alt="Banner"  /> -->
-	<video src={aftermovievideo} autoplay muted playsinline loop preload="metadata" class="mx-auto mt-2 sm:mb-[63px] sm:mt-8 max-h-[764px]" ></video>
+	<video src="/aftermovie.mp4" autoplay muted playsinline loop preload="metadata" class="mx-auto mt-2 sm:mb-[63px] sm:mt-8 max-h-[764px]" ></video>
 
 	<div class="mt-6 px-6 sm:mt[33px] max-w-[1021px] mx-auto" >
 		<a href="https://youtube.com/playlist?list=PLi_86_tcBWl9KvYnqtGo77qkx2GGsbJqR&si=fcnXjW7wLs8S8X1o" target="_blank" >
