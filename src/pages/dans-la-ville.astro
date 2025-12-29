@@ -217,27 +217,27 @@ import Header from "../components/Header.astro"
 	</section>
 
 	<section class="flex flex-col max-w-[1440px] lg:mx-auto" >
-		<header class="px-7 flex flex-col justify-center items-center w-full mt-[111px]" >
-			<Image src={Vendredi27Title} alt="Vendredi27Title" class="w-[370px] mx-auto" />
-			<Image src={Vendredi27Subtitle} alt="Vendredi27Subtitle" class="w-[178px] relative left-18" />
+		<header class="px-7 flex flex-col justify-center items-center w-full mt-[111px] lg:mt-[303px] lg:relative lg:right-80" >
+			<Image src={Vendredi27Title} alt="Vendredi27Title" class="w-[370px] lg:w-[673px]" />
+			<Image src={Vendredi27Subtitle} alt="Vendredi27Subtitle" class="w-[178px] lg:w-[241px] relative left-18 lg:left-48 lg:bottom-4" />
 		</header>
-		<div class="flex flex-col justify-center items-center lg:px-7 lg:h-[600px] mt-[33px] mb-8" >
-			<a class="flex flex-col justify-center items-center lg:relative lg:left-80 lg:top-100" >
-				<Image onclick="window.open('https://youtu.be/_hu5m8MOVcw?si=2J8QrVIthwd17t9P', '_blank')" src={CarnagePiknik} alt="Carnage Piknik" class="lg:h-[642px] lg:w-full w-[210px] max-w-[452px]" />
-				<Image onclick="window.open('https://youtu.be/_hu5m8MOVcw?si=2J8QrVIthwd17t9P', '_blank')" src={CarnagePiknikTitle} alt="Carnage Piknik" class="w-[174px] relative -rotate-4 bottom-5 left-18" />
+		<div class="lg:grid lg:grid-cols-2 lg:grid-rows-2 flex flex-col justify-center items-center lg:px-7 lg:h-[1000px] mt-[33px] mb-8" >
+			<a class="flex flex-col justify-center items-center lg:relative lg:left-75 lg:top-50 lg:row-span-1 lg:col-span-2" >
+				<Image onclick="window.open('https://youtu.be/_hu5m8MOVcw?si=2J8QrVIthwd17t9P', '_blank')" src={CarnagePiknik} alt="Carnage Piknik" class="h-auto w-[210px] lg:w-[452px]" />
+				<Image onclick="window.open('https://youtu.be/_hu5m8MOVcw?si=2J8QrVIthwd17t9P', '_blank')" src={CarnagePiknikTitle} alt="Carnage Piknik" class="w-[174px] lg:w-[335px] lg:bottom-170 relative -rotate-4 bottom-5 left-18 lg:left-38" />
 			</a>
 	
-			<a class="flex flex-col justify-center items-center relative left-10" >
-				<Image onclick="window.open('https://youtu.be/gnDwQQtct_Q?si=WZKB4YGyKv7YGzhQ', '_blank')" src={VetusteTitle} alt="Vetuste" class="w-[113px] relative top-4 right-27" />
-				<Image onclick="window.open('https://youtu.be/gnDwQQtct_Q?si=WZKB4YGyKv7YGzhQ', '_blank')" src={Vetuste} alt="Vetuste" class="w-[301px] ml-auto" />
+			<a class="flex flex-col justify-center items-center relative left-10 lg:left-20 lg:top-88 lg:row-span-2 lg:col-span-1	" >
+				<Image onclick="window.open('https://youtu.be/gnDwQQtct_Q?si=WZKB4YGyKv7YGzhQ', '_blank')" src={VetusteTitle} alt="Vetuste" class="w-[113px] lg:w-[167px] relative top-4 right-27 lg:top-130 lg:-right-40" />
+				<Image onclick="window.open('https://youtu.be/gnDwQQtct_Q?si=WZKB4YGyKv7YGzhQ', '_blank')" src={Vetuste} alt="Vetuste" class="w-[301px] lg:w-[613px] ml-auto" />
 			</a>
-			<a class="flex flex-col justify-center items-center " >
-				<Image onclick="window.open('https://youtu.be/K1z-ctOpXcs?si=kFp6KIp-_DpOYIq0', '_blank')" src={SodomEtSagesse} alt="Sodom et Sagesse" class="w-[264px] h-auto relative bottom-1 right-6" />
-				<Image onclick="window.open('https://youtu.be/K1z-ctOpXcs?si=kFp6KIp-_DpOYIq0', '_blank')" src={SodomEtSagesseTitle} alt="Sodom et Sagesse" class="w-[159px] relative right-26 rotate-6 bottom-6" />
+			<a class="flex flex-col justify-center items-center lg:row-span-1 lg:col-span-1 lg:relative lg:right-110" >
+				<Image onclick="window.open('https://youtu.be/K1z-ctOpXcs?si=kFp6KIp-_DpOYIq0', '_blank')" src={SodomEtSagesse} alt="Sodom et Sagesse" class="w-[264px] lg:w-[528px] h-auto relative bottom-1 right-6" />
+				<Image onclick="window.open('https://youtu.be/K1z-ctOpXcs?si=kFp6KIp-_DpOYIq0', '_blank')" src={SodomEtSagesseTitle} alt="Sodom et Sagesse" class="w-[159px] lg:w-[245px] relative right-26 rotate-6 lg:rotate-0 lg:bottom-98 lg:right-60 bottom-6" />
 			</a>
-			<a class="flex flex-col justify-center items-center " >
-				<Image src={BaptisteImage} alt="Baptiste" class="w-[219px] h-auto " />
-				<Image src={BaptisteTitle} alt="Baptiste" class="w-[141px] -rotate-3 relative bottom-2 -right-26" />
+			<a class="flex flex-col justify-center items-center lg:row-span-2 lg:col-span-2 lg:relative lg:left-74 lg:top-20" >
+				<Image src={BaptisteImage} alt="Baptiste" class="w-[219px] lg:w-[444px] h-auto " />
+				<Image src={BaptisteTitle} alt="Baptiste" class="w-[141px] lg:w-[305px] -rotate-3 relative bottom-2 -right-26 lg:bottom-6 lg:rotate-1 lg:-right-40" />
 			</a>
 		</div>
 
