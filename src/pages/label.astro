@@ -32,4 +32,22 @@ import Header from "../components/Header.astro"
 			<Image src={instagram} alt="Instagram" />
 		</a>
 	</footer>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const video = document.querySelector('video');
+
+			if (video) {
+
+				video.muted = true;
+				// Rend la vidéo cliquable visuellement
+				video.style.cursor = 'pointer';
+
+				// Ajoute l'événement click pour toggle mute/unmute
+				video.addEventListener('click', function() {
+					video.muted = !video.muted;
+				});
+			}
+		});
+	</script>
 </Layout>
