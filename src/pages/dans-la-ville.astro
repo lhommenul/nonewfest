@@ -4,6 +4,7 @@ import Layout from "../layouts/index.astro";
 import { Image } from "astro:assets";
 import BeforeHeadTitleDesktop from "../images/la-ville/header/title.png";
 import BeforeHeadTitle from "../images/la-ville/header/title_mobile.png";
+import BeforeHeadPlan from "../images/la-ville/header/plan.jpg";
 import BeforeHeadCondition from "../images/la-ville/header/subtitle.png";
 
 
@@ -107,6 +108,7 @@ import Header from "../components/Header.astro"
 	<Header />
 	<section class=" flex flex-col max-w-[1440px] lg:mx-auto" >
 		<h2 class="mx-auto px-7 mt-[54px]" >
+			<Image src={BeforeHeadPlan} alt="description de l'event" class="w-full mb-[20px] md:mb-[63px]" />
 			<Image src={BeforeHeadTitle} alt="description de l'event" class="visible md:hidden w-full" />
 			<Image src={BeforeHeadTitleDesktop} alt="description de l'event" class="hidden md:block" />
 			<Image src={BeforeHeadCondition} alt="event condition" class="ml-auto lg:relative lg:bottom-12 lg:right-6" />
